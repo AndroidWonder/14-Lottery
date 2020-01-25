@@ -36,8 +36,9 @@ public class Lottery extends Activity implements SensorEventListener {
 
     @Override
     public void onStart(){
-        senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
         super.onStart();
+        senSensorManager.registerListener(this, senAccelerometer , SensorManager.SENSOR_DELAY_NORMAL);
+
     }
 
     @Override
